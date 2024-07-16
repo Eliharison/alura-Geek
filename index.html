@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Descrição e autores -->
+    <meta name="description" content="AluraGeek, feito de nerd para nerd!!" />
+    <meta
+      name="keywords"
+      content="AluraGeek, Challenge, Desafio, Geek, eliharison"
+    />
+    <meta name="author" content="eliharison" />
+
+    <!-- Compartilhamento Links -->
+    <meta property="og:url" content="https://eliharison.github.io/AluraGeek/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AluraGeek" />
+    <meta
+      property="og:description"
+      content="Venha conhecer o site AluraGeek!"
+    />
+    <meta property="og:image" itemprop="image" content="" />
+
+    <!-- CSS normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Font Press Start 2P -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font IBM Plex Mono -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Icones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="imgs/image-favicon.svg" />
+
+    <!-- Folha de estilo de CSS Linkado -->
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/components.css" />
+    <link rel="stylesheet" href="/css/responsiveness.css" />
+
+    <title>AluraGeek</title>
+  </head>
+  <body class="body">
+    <header
+      class="navbar navbar-brand bg-primary p-0 m-0 d-flex justify-content-center"
+    >
+      <img src="/imgs/logo-Completa.svg" class="img img-fluid" />
+    </header>
+    <main class="mt-5">
+      
+      <form data-formulario class="d-flex px-4 flex-column gap-4">
+        <span class="mensagem-erro" id="erro"></span>
+        <label for="" class="text-center"><h3>ADICIONAR PRODUTO:</h3></label>
+        <input 
+          data-name
+          type="text"
+          name="name"
+          class="p-3 border-4 border-primary rounded-pill"
+          placeholder="nome..."
+          minlength="3"
+          required
+        />
+        
+        <input
+          data-price
+          type="text"
+          name="price"
+          class="p-3 border-4 border-primary rounded-pill"
+          placeholder="preço..."
+          minlength="4"
+          pattern="^(0|[1-9][0-9]*)([\.,][0-9]{1,2})?$"
+          required
+        />
+        <input
+          data-image
+          type="text"
+          name="image"
+          class="p-3 border-4 border-primary rounded-pill"
+          placeholder="imagem..."
+          pattern="^https:\/\/[a-zA-Z0-9_\-]+(\.[a-zA-Z0-9_\-]+)*\.(jpg|jpeg|png|gif)$"
+          required
+        />
+        <div class="d-flex justify-content-around gap-2">
+          <button data-submit type="submit" class="btn btn-primary">Guardar</button>
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+        </div>
+      </form>
+      <div class="caixa-produtos mt-5 mb-2">
+        <h3 class="mb-5 px-5 text-center">MEUS PRODUTOS:</h3>
+        
+          <div class="produtos flex-wrap d-flex justify-content-around gap-2 px-1" data-card>
+          </div>
+
+      </div>
+    </main>
+    <footer
+      class="navbar navbar-brand bg-primary p-0 m-0 d-flex justify-content-center flex-column"
+    >
+      <img src="/imgs/logo-Completa.svg" class="img img-fluid" />
+      <p class="text-white">DEV: ELIHARISON</p>
+      <p class="text-white">ALURA LATAM - 2024</p>
+    </footer>
+    <script src="/js/validacao.js"></script>
+    <script src="/js/mostrarGames.js" type="module"></script>
+  </body>
+</html>
