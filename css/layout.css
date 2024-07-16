@@ -1,0 +1,46 @@
+.bg-primary {
+    background-color: var(--primary-color) !important;
+  }
+  
+  .border-primary {
+      border-color: var(--azul) !important;
+  }
+  
+  .btn {
+      border-radius: 16px;
+      padding: 16px 32px;
+      text-align: center;
+      font-size: large;
+  }
+  
+  .btn-primary {
+      background-color: var(--azul) !important;
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    color: var(--azul);
+    border-color: var(--azul);
+  }
+
+  
+  .container {
+    max-width: 1200px;
+    padding: 0 var(--spacer);
+  }
+  
+  .mt-1 {
+    margin-top: var(--spacer);
+  }
+  
+  .mb-1 {
+    margin-bottom: var(--spacer);
+  }
+  
+  .pt-1 {
+    padding-top: var(--spacer);
+  }
+  
+  .pb-1 {
+    padding-bottom: var(--spacer);
+  }

@@ -1,0 +1,23 @@
+@media (min-width: 800px) {
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+
+    form {
+        max-width: 570px;
+    }
+
+    div.caixa-produtos {
+        max-width: 678px;
+        height: 60vh;
+        box-shadow: -12px 10px 5.8px 0px rgba(0, 0, 0, 0.25);
+        
+    }
+    div.produtos {
+        overflow: auto;
+        max-height: 50.5vh;
+    } 
+}

@@ -1,0 +1,53 @@
+:root {
+  --roxo: #8c0375;
+  --rosa-claro: #c004d9;
+  --rosa-escuro: #9303a6;
+  --roxo-azulado: #5d04d9;
+  --azul: #03318c;
+
+  --primary-color: #5300c8;
+  --secondary-color: #03318c;
+
+  --body-color: #131212;
+  --muted-color: #252525;
+
+  --font-family-primario: "Press Start 2P", "Roboto", sans-serif;
+  --font-family-secondario: "IBM Plex Mono", "Roboto", sans-serif;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-sm: 0.875rem;
+
+  --spacer: 1rem;
+
+  --border-radius: 0.25rem;
+}
+
+body {
+  font-family: var(--font-family-secondario);
+  color: var(--body-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-primario);
+  color: var(--body-color);
+}
+
+p {
+  color: var(--body-color);
+  margin-bottom: var(--spacer);
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-color);
+  text-decoration: underline;
+}
